@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>Samsung — Deep Learning Image Quality Analysis (IQA)</h1>
+  <h1>Samsung -Deep Learning Image Quality Analysis (IQA)</h1>
   <p><i>Automated Artifact Detection & No-Reference Image Quality Assessment</i></p>
 
   <p>
@@ -53,7 +53,7 @@ In many real-world scenarios, a pristine reference image isn't available. This p
 
 | Feature | Description |
 |:---|:---|
-| **Assessment Mode** | No-reference — input image only |
+| **Assessment Mode** | No-reference -input image only |
 | **Output** | Distortion category classification |
 | **Target Artifacts** | Noise, sensor faults, processing errors |
 | **Integration** | Plugs directly into evaluation pipelines |
@@ -133,7 +133,7 @@ The system employs a multi-stage pipeline to detect, isolate, and classify techn
 
 | Component | Requirement |
 |:---|:---|
-| **GPU** | NVIDIA with CUDA support — *highly recommended* |
+| **GPU** | NVIDIA with CUDA support -*highly recommended* |
 | **CPU** | Supported as fallback (significantly slower) |
 | **OS** | Windows, macOS, or Linux |
 
@@ -141,7 +141,7 @@ The system employs a multi-stage pipeline to detect, isolate, and classify techn
 
 | Component | Requirement |
 |:---|:---|
-| **Python** | 3.8 or higher required — 3.10+ recommended |
+| **Python** | 3.8 or higher required -3.10+ recommended |
 | **Environment** | `venv` or `conda` recommended |
 | **Package manager** | pip |
 
