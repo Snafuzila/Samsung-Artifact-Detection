@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>Samsung -Deep Learning Image Quality Analysis (IQA)</h1>
+  <h1>Samsung - Deep Learning Image Artifact Detection & Classification</h1>
   <p><i>Automated Artifact Detection & No-Reference Image Quality Assessment</i></p>
 
   <p>
@@ -107,7 +107,7 @@ The system employs a multi-stage pipeline to detect, isolate, and classify techn
 
 <div align="center">
 
-| Heatmap Generation & NMS Visualization | Threshold Filtering |
+| Threshold Filtering | Heatmap Generation & NMS Visualization |
 |:---:|:---:|
 | ![Heatmap GIF](https://cdn.discordapp.com/attachments/1438221403307642992/1495313304854204506/heatmap.gif?ex=69e5ca89&is=69e47909&hm=2b2a35549b01623a2fc4451afe9690eadbfc9792b2c287a7c59197f212abaffa&) | ![IOU GIF](https://cdn.discordapp.com/attachments/1438221403307642992/1495313305273630891/iou50-05.gif?ex=69e5ca89&is=69e47909&hm=d6e065002b403b034c43385bb422a38c65a87c0f08ec0dec6e2e5ddfe797a9b4&) |
 
