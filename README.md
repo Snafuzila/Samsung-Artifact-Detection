@@ -39,7 +39,7 @@
 
 ## The Goal
 
-A specialized **No-Reference Image Quality Assessment (IQA)** model designed to automatically detect, classify, and quantify image degradation. This project focuses on identifying technical artifacts such as sensor faults and processing errors without requiring a "clean" reference image.
+A deep learning system that automatically detects and classifies visual distortions in images, without requiring a reference image.
 
 <br />
 
