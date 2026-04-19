@@ -1,7 +1,7 @@
 <div align="center">
 
   <h1>Samsung - Deep Learning Image Artifact Detection & Classification</h1>
-  <p><i>Automated Artifact Detection & No-Reference Image Quality Assessment</i></p>
+  
 
   <p>
     <img src="https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge" alt="Status">
