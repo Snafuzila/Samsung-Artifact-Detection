@@ -1,3 +1,5 @@
 docs/
 samsung_data/
 .idea/
+/older_versions
+__pycache__
