@@ -1,10 +1,10 @@
-# Samsung Image Defect Detection 🔍
+# Samsung Image Defect Detection 
 
 A two-stage Deep Learning pipeline designed to automatically detect and classify visual artifacts and defects in images.
 
 ---
 
-## 🧠 Pipeline Architecture
+##  Pipeline Architecture
 
 This project uses a modular approach, split into three main components:
 
@@ -28,12 +28,12 @@ This project uses a modular approach, split into three main components:
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YourUsername/Samsung-Artifact-Detection.git
+git clone https://github.com/Snafuzila/Samsung-Artifact-Detection.git
 cd Samsung-Artifact-Detection
 ```
 
@@ -59,25 +59,17 @@ source venv/bin/activate
 pip install torch torchvision pandas pillow tqdm
 ```
 
-### 4. Add Model Weights
-
-Place your pre-trained weights in the project directory:
-
-- `binary_model.pth`
-- `best_samsung_model.pth`
-
-> ⚠️ Update paths inside `pipeline.py` if needed.
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### 1. Command Line Interface (CLI)
 
 **Basic run:**
 
 ```bash
-python pipeline.py path/to/your_image.bmp
+python pipeline.py path/to/your_image
 ```
 
 This generates a timestamped JSON file automatically, for example:
@@ -107,17 +99,32 @@ run_pipeline(
 
 ---
 
-## 🎛️ Parameters Guide
+## Parameters Guide
 
 | Parameter     | Default | Description                            | Tuning Advice                                                                 |
 |---------------|---------|----------------------------------------|-------------------------------------------------------------------------------|
-| `--threshold` | `0.90`  | Minimum confidence for binary detection | Lower (0.70) → higher recall, more detections. Higher (0.98) → fewer false positives |
+| `--threshold` | `0.90`  | Confidence for binary detection | Lower (0.70) → higher recall, more detections. Higher (0.98) → fewer false positives |
 | `--iou`       | `0.05`  | IoU threshold for NMS                  | Lower → merges nearby boxes. Higher → keeps close detections separate         |
-| `--output`    | Auto    | Output JSON filename                   | Set custom name like `report.json`                                            |
+| `--output`    | Auto    | Output JSON filename                   | default `defect_report_date_time.json`                                            |
+
+
+Additional In-Code Parameters (Internal)
+These parameters govern the underlying mechanics of the image processing. They are hardcoded within the Python files for optimal baseline performance, but can be modified in the code for specific use cases:
+
+#### WINDOW_SIZE (int, default: 50)
+Effect: Defines the dimensions (50x50 pixels) of the square patch extracted during the sliding window phase and the expected input size for both CNN models.
+<span style="color:red">Note: Changing this requires retraining the models, as they expect a fixed input dimension.</span>
+
+#### STRIDE (int, default: 10)
+Effect: The step size (in pixels) the sliding window takes as it moves across the image.
+Tuning: A smaller stride (e.g., 5) provides higher resolution detection but significantly increases inference time. A larger stride (e.g., 50) speeds up processing but might miss very small or edge-case defects.
+
+#### MARGIN (int, default: 20)
+Effect: Inflates the detected bounding box by this amount (in pixels) before applying NMS.
+Tuning: This is used to aggressively cluster nearby positive detections into a single event. Increase the margin if the pipeline outputs multiple distinct points for a single, large artifact. Decrease it if distinct, nearby defects are mistakenly merged into one.
 
 ---
-
-## 📊 Output Format
+## Output Format
 
 The pipeline outputs a JSON file containing all detected defects.
 
@@ -125,7 +132,8 @@ Each entry includes:
 
 - Bounding box coordinates
 - Binary detection score
-- Predicted class
+- Predicted class name
+- Predicted class index
 - Classification confidence
 
 **Example (`defect_report.json`):**
@@ -148,11 +156,3 @@ Each entry includes:
     }
 ]
 ```
-
----
-
-## 📌 Notes
-
-- Designed for high-resolution image inspection
-- Modular structure allows easy model replacement or tuning
-- Suitable for industrial defect detection workflows
