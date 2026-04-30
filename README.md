@@ -161,7 +161,7 @@ cd Samsung-Artifact-Detection
 ```bash
 pip install torch torchvision numpy Pillow matplotlib scikit-image tqdm
 ```
-
+**3. Usage Guide [Link](usage_guide.md)**
 <br />
 
 ## Results & Evaluation
