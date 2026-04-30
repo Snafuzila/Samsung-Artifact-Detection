@@ -19,6 +19,7 @@ def run_pipeline(image_path, threshold, iou, output_filename):
         print(f"❌ Error: Image '{image_path}' not found.")
         return
 
+
     # Paths and Classes
     BINARY_WEIGHTS = r"Samsung-Artifact-Detection\weights\binary_model.pth"
     CLASS_WEIGHTS = r"Samsung-Artifact-Detection\weights\best_samsung_model.pth"
