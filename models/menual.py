@@ -20,8 +20,8 @@ def run_pipeline(image_path, threshold, iou, output_filename):
         return
 
     # Paths and Classes
-    BINARY_WEIGHTS = r"C:\Recovered\BOAZ\study\projects\samsung\weights\binary_model.pth"
-    CLASS_WEIGHTS = r"C:\Recovered\BOAZ\study\projects\samsung\weights\best_samsung_model.pth"
+    BINARY_WEIGHTS = r"Samsung-Artifact-Detection\weights\binary_model.pth"
+    CLASS_WEIGHTS = r"Samsung-Artifact-Detection\weights\best_samsung_model.pth"
     TEMP_JSON = "temp_suspects.json"
     SAMSUNG_CLASSES = ['Broken Line', 'Edge False Color', 'Over Desaturation', 'Saturated False Color', 'Smears']
 
