@@ -1,0 +1,86 @@
+[
+    {
+        "box": [
+            10.0,
+            0.0,
+            60.0,
+            50.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Over Desaturation",
+        "predicted_class_idx": 2,
+        "classification_confidence": 0.7005
+    },
+    {
+        "box": [
+            90.0,
+            0.0,
+            140.0,
+            50.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Over Desaturation",
+        "predicted_class_idx": 2,
+        "classification_confidence": 0.9412
+    },
+    {
+        "box": [
+            170.0,
+            0.0,
+            220.0,
+            50.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Smears",
+        "predicted_class_idx": 4,
+        "classification_confidence": 0.7327
+    },
+    {
+        "box": [
+            220.0,
+            60.0,
+            270.0,
+            110.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Over Desaturation",
+        "predicted_class_idx": 2,
+        "classification_confidence": 0.6218
+    },
+    {
+        "box": [
+            30.0,
+            70.0,
+            80.0,
+            120.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Smears",
+        "predicted_class_idx": 4,
+        "classification_confidence": 0.6912
+    },
+    {
+        "box": [
+            110.0,
+            70.0,
+            160.0,
+            120.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Saturated False Color",
+        "predicted_class_idx": 3,
+        "classification_confidence": 0.7745
+    },
+    {
+        "box": [
+            170.0,
+            120.0,
+            220.0,
+            170.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Smears",
+        "predicted_class_idx": 4,
+        "classification_confidence": 0.5352
+    }
+]

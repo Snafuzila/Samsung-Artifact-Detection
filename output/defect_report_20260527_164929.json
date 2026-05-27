@@ -1,0 +1,74 @@
+[
+    {
+        "box": [
+            10.0,
+            0.0,
+            60.0,
+            50.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Over Desaturation",
+        "predicted_class_idx": 2,
+        "classification_confidence": 0.7005
+    },
+    {
+        "box": [
+            100.0,
+            0.0,
+            150.0,
+            50.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Over Desaturation",
+        "predicted_class_idx": 2,
+        "classification_confidence": 0.9663
+    },
+    {
+        "box": [
+            190.0,
+            0.0,
+            240.0,
+            50.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Smears",
+        "predicted_class_idx": 4,
+        "classification_confidence": 0.537
+    },
+    {
+        "box": [
+            30.0,
+            80.0,
+            80.0,
+            130.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Over Desaturation",
+        "predicted_class_idx": 2,
+        "classification_confidence": 0.5821
+    },
+    {
+        "box": [
+            120.0,
+            80.0,
+            170.0,
+            130.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Smears",
+        "predicted_class_idx": 4,
+        "classification_confidence": 0.5106
+    },
+    {
+        "box": [
+            210.0,
+            80.0,
+            260.0,
+            130.0
+        ],
+        "binary_score": 1.0,
+        "predicted_class_name": "Smears",
+        "predicted_class_idx": 4,
+        "classification_confidence": 0.5026
+    }
+]
