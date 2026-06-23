@@ -211,7 +211,7 @@ pip install torch torchvision numpy Pillow matplotlib scikit-image tqdm
     </td>
     <td align="center">
       <a href="https://github.com/TheLazyPrince">
-        <img src="https://github.com/TheLazyPrince.png" width="60" height="60" style="border-radius:50%"/><br/>
+        <img src="https://github.com/inonzr.png" width="60" height="60" style="border-radius:50%"/><br/>
         <sub><b>Reany Inon</b></sub>
       </a>
     </td>
